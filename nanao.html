@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>南澳岛一日环岛 | 潮汕国庆自驾</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .route{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .rt{display:flex;gap:16px;padding:15px 19px;background:var(--surface);border-bottom:1px solid var(--line);align-items:flex-start}
+  .rt:last-child{border-bottom:0}
+  .rt:nth-child(even){background:var(--surface-2)}
+  .rt .tm{flex:0 0 60px;font-size:12.5px;font-weight:800;color:var(--coral);padding-top:2px;font-variant-numeric:tabular-nums}
+  .rt .w{flex:1;min-width:0}
+  .rt .w .h{font-weight:700;font-size:15.5px;margin-bottom:2px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .rt .w .h .free{font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--sea-soft);color:var(--sea);border:1px solid rgba(62,207,178,.35)}
+  .rt .w .h .pay{font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--gold-soft);color:var(--gold);border:1px solid rgba(245,185,66,.35)}
+  .rt .w .x{color:var(--muted);font-size:13.5px;line-height:1.7}
+  .rt.peak{background:linear-gradient(90deg,rgba(255,107,74,.10),transparent)}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html">
+      <span class="mk">潮</span>
+      <span>潮汕国庆自驾<small>汕头 · 南澳岛</small></span>
+    </a>
+    <button class="burger" aria-label="菜单">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">总览</a>
+      <a href="itinerary.html">行程</a>
+      <a href="food.html">美食</a>
+      <a href="nanao.html" class="act">南澳岛</a>
+      <a href="prep.html">行前</a>
+      <a href="budget.html">预算</a>
+    </nav>
+    <div class="prog"></div>
+  </div>
+</header>
+
+<section class="section tight" style="padding-top:44px">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:26px">
+      <div class="kicker">Nan'ao Island</div>
+      <h2>南澳岛，一天走完整环线</h2>
+      <p>环岛观光主线约 60 km，含支线完整一圈约 <strong>68 km</strong>。逆时针走是公认最优 ——
+      全线单向沿海、拍照全程顺光、不走回头路。含午餐休息，全天 8–9 小时。</p>
+    </div>
+
+    <div class="grid g3 rv" style="gap:14px;margin-bottom:26px">
+      <div class="card" style="padding:20px">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.16em;color:var(--muted);margin-bottom:6px">上桥</div>
+        <div style="font-size:23px;font-weight:800;color:var(--coral);letter-spacing:-.02em">06:40</div>
+        <p style="margin:6px 0 0;color:var(--muted);font-size:13.5px;line-height:1.7">东海岸 06:00 出发，30 分钟到核验点。<br>早过桥是全天不排队的唯一办法。</p>
+      </div>
+      <div class="card" style="padding:20px">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.16em;color:var(--muted);margin-bottom:6px">环岛</div>
+        <div style="font-size:23px;font-weight:800;color:var(--gold);letter-spacing:-.02em">68 km</div>
+        <p style="margin:6px 0 0;color:var(--muted);font-size:13.5px;line-height:1.7">逆时针一圈，12 个站点。<br>山路和坡道多，出发前把电充满。</p>
+      </div>
+      <div class="card" style="padding:20px">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.16em;color:var(--muted);margin-bottom:6px">出岛</div>
+        <div style="font-size:23px;font-weight:800;color:var(--sea);letter-spacing:-.02em">20:00</div>
+        <p style="margin:6px 0 0;color:var(--muted);font-size:13.5px;line-height:1.7">看完日落先回后宅吃饭，用一顿饭错开出岛高峰。</p>
+      </div>
+    </div>
+
+    <div class="alert a-coral rv">
+      <span class="hd">进岛是硬门槛：必须先预约</span>
+      南澳 10/1–10/7 实行车辆预约入岛，入口是微信小程序「<b>南澳畅行</b>」。通行时段 <b>6:00–23:00</b>，
+      23:00 至次日 6:00 交通管控，<b>无预约或超时段抵达一律无法登岛</b>。<br>
+      核验点：<b>莱芜湾欢乐世界 A 区地上停车场</b>。核验出示预约成功截图 + 行驶证。<br>
+      没约上：车停莱芜湾 P1 停车场，转乘接驳公交入岛。
+      <a href="prep.html" style="color:#ffd0c2;font-weight:700">预约流程 &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 环岛站点 ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">Counter-clockwise loop</div>
+      <h2>逆时针环岛 12 站</h2>
+      <p>下桥后右转开始。西线看大桥与礁石，南线是渔村，东线是核心沙滩，北线是风车与日落。</p>
+    </div>
+
+    <div class="route rv">
+      <div class="rt"><div class="tm">07:30</div><div class="w">
+        <div class="h">启航广场 · 长山尾灯塔 <span class="free">免费</span></div>
+        <div class="x">进岛第一个地标，红白灯塔配跨海大桥，评分 4.9。停 15&ndash;20 分钟拍大桥同框。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">08:30</div><div class="w">
+        <div class="h">田仔地质公园 <span class="free">免费</span></div>
+        <div class="x">海蚀崖加礁石海岸，浪大时很壮观。停留约 40 分钟。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">09:30</div><div class="w">
+        <div class="h">钱澳湾灯塔 <span class="free">免费</span></div>
+        <div class="x">奶油白小灯塔加海边栈道，小众文艺机位。旁边石潭寺停车场全天免费。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">10:20</div><div class="w">
+        <div class="h">海丝广场 · 前江湾 <span class="free">免费</span></div>
+        <div class="x">打卡地标墙，前江湾沙滩平缓，适合走一走。</div>
+      </div></div>
+
+      <div class="rt peak"><div class="tm">11:30</div><div class="w">
+        <div class="h">后宅镇 · 午餐休整</div>
+        <div class="x">南澳县城中心，海鲜市场与平价餐馆集中。<b>岛上正餐优先在这里或云澳吃</b>，青澳湾沿街排档要贵约 30%。预留 1 小时。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">13:00</div><div class="w">
+        <div class="h">云澳渔港 <span class="free">免费</span></div>
+        <div class="x">停满渔船，彩色养殖浮球很上镜，可买刚上岸的鲜活海鲜。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">13:40</div><div class="w">
+        <div class="h">宋井 <span class="pay">约 16 元</span></div>
+        <div class="x">南宋古井，离海极近却井水甘甜，是南澳最有故事的人文点。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">14:10</div><div class="w">
+        <div class="h">三囱崖灯塔 <span class="free">免费</span></div>
+        <div class="x">红白双子灯塔立在悬崖上，环岛核心打卡点，评分 4.4。停留约 1 小时。</div>
+      </div></div>
+
+      <div class="rt peak"><div class="tm">15:30</div><div class="w">
+        <div class="h">青澳湾 + 北回归线「自然之门」 <span class="free">免费</span></div>
+        <div class="x">南澳最出名的沙滩，评分 4.7；北回归线标志塔就在黄金海岸内，评分 4.6。<b>国庆人最多、停车位极紧张。</b></div>
+      </div></div>
+
+      <div class="rt"><div class="tm">17:00</div><div class="w">
+        <div class="h">金银岛 / 深澳总兵府 <span class="pay">6 / 13 元</span></div>
+        <div class="x">金银岛是花岗岩叠成的礁石海景；总兵府是明清海防遗址，郑成功雕像。都在深澳镇一带，时间紧就二选一。</div>
+      </div></div>
+
+      <div class="rt peak"><div class="tm">17:40</div><div class="w">
+        <div class="h">蛴仔澎风车山 —— 日落 <span class="free">免费</span></div>
+        <div class="x">「宫崎骏同款风车海」。<b>42 号风机视野最佳</b>，2 号公路一带是公认的「橘子海」日落机位。看完顺着西线出岛，不用折返。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">18:30</div><div class="w">
+        <div class="h">走马埔彩虹海 &rarr; 后宅镇晚餐</div>
+        <div class="x">彩虹海是成片彩色养殖浮球，顺路看一眼。<b>回后宅吃饭是刻意的——用来错开 17:00&ndash;19:00 的出岛高峰。</b>瑞娇嫲嫲·南澳后宅店就在海滨路 100 号首层。</div>
+      </div></div>
+
+      <div class="rt"><div class="tm">20:00</div><div class="w">
+        <div class="h">出岛</div>
+        <div class="x">这时大队人马已经散得差不多，桥上明显比 17&ndash;19 点好走。出岛不再收费，直接过，约 21:00 回到汕头东海岸。</div>
+      </div></div>
+    </div>
+
+    <div class="alert a-gold rv" style="margin-top:18px">
+      <span class="hd">时间不够就砍北线</span>
+      一日游想轻松点，可以只在东西海岸线精华段走：<b>长山尾 → 钱澳湾 → 青澳湾 → 风车山 → 三囱崖</b>，舍弃北线能省下约 2 小时。
+      但那样就看不到风车山日落了。
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 停车 & 美食 ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="grid g2" style="gap:26px;align-items:start">
+      <div class="rv">
+        <div class="kicker" style="font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--coral);margin-bottom:10px">Parking</div>
+        <h2 style="margin:0 0 14px;font-size:22px">停车参考</h2>
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead><tr>
+            <th style="text-align:left;padding:10px 12px;border:1px solid var(--line);background:var(--surface-2);font-size:12.5px;color:var(--muted)">位置</th>
+            <th style="text-align:left;padding:10px 12px;border:1px solid var(--line);background:var(--surface-2);font-size:12.5px;color:var(--muted)">收费</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding:10px 12px;border:1px solid var(--line)">莱芜湾 A 区（核验点）</td><td style="padding:10px 12px;border:1px solid var(--line)">&mdash;</td></tr>
+            <tr><td style="padding:10px 12px;border:1px solid var(--line)">长山尾游客中心</td><td style="padding:10px 12px;border:1px solid var(--line)">30 分钟免费，超时 5 元/h</td></tr>
+            <tr><td style="padding:10px 12px;border:1px solid var(--line)">青澳湾北回归线广场</td><td style="padding:10px 12px;border:1px solid var(--line);color:var(--coral)">10 元/h，旺季极紧张</td></tr>
+            <tr><td style="padding:10px 12px;border:1px solid var(--line)">云澳渔港</td><td style="padding:10px 12px;border:1px solid var(--line)">5 元/h</td></tr>
+            <tr><td style="padding:10px 12px;border:1px solid var(--line)">钱澳湾石潭寺</td><td style="padding:10px 12px;border:1px solid var(--line);color:var(--sea)">全天免费</td></tr>
+          </tbody>
+        </table>
+        <div class="alert a-coral" style="margin-top:14px">
+          <b>环岛路边非划线区域严禁停车</b>，很容易被贴条。另外路边私人收取的「观景停车费」都是违规收费，正规灯塔和沙滩都免费停。
+        </div>
+      </div>
+
+      <div class="rv" data-d="1">
+        <div class="kicker" style="font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--coral);margin-bottom:10px">Eat on the island</div>
+        <h2 style="margin:0 0 14px;font-size:22px">岛上吃什么</h2>
+        <div class="card" style="padding:20px">
+          <h3 style="margin:0 0 10px;font-size:15.5px;color:var(--sea)">必吃清单</h3>
+          <ul style="margin:0;padding-left:19px;color:var(--muted);font-size:14px;line-height:1.85">
+            <li><b style="color:var(--text-2)">紫菜炒饭</b> —— 头水紫菜加粒粒米饭</li>
+            <li><b style="color:var(--text-2)">南澳蚝烙</b> —— 外脆里嫩，蚝肉饱满</li>
+            <li><b style="color:var(--text-2)">马鲛鱼丸</b> / <b style="color:var(--text-2)">鱼丸紫菜汤</b></li>
+            <li><b style="color:var(--text-2)">白灼小管</b> —— 蘸鱼露酱油，云澳渔港最稳</li>
+            <li><b style="color:var(--text-2)">海鲜粥</b> · <b style="color:var(--text-2)">生腌虾蟹</b></li>
+          </ul>
+          <h3 style="margin:16px 0 10px;font-size:15.5px;color:var(--gold)">去哪儿吃</h3>
+          <p style="margin:0;color:var(--muted);font-size:14px;line-height:1.8">
+            <b style="color:var(--text-2)">后宅镇市场大排档</b>：性价比最高，本地价。<br>
+            <b style="color:var(--text-2)">云澳渔港</b>：买鲜活海鲜就近加工。<br>
+            <b style="color:var(--text-2)">瑞娇嫲嫲 · 南澳后宅店</b>：后宅镇海滨路 100 号首层，10:00&ndash;01:00，你点名的生腌。
+          </p>
+          <div class="alert a-gold" style="margin-top:14px;font-size:13.5px">
+            <b>省钱的正确姿势</b>：后宅市场自己买海鲜（花蟹约 25 元/斤、皮皮虾约 30 元/斤），找档口加工，加工费 10&ndash;20 元。点菜先问价、看秤。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 避坑 ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker">Watch out</div>
+      <h2>桥上与岛上，这些坑别踩</h2>
+    </div>
+    <div class="grid g2 rv" style="gap:14px">
+      <div class="alert a-coral"><span class="hd">大桥上</span>
+        限速 60 km/h，区间测速加抓拍全覆盖。<b>严禁超车、倒车、逆行、掉头、压线、停车拍照、上下客、夜间开远光灯。</b>
+        大桥全长约 9 km，出岛不再收费。国庆可能实行单向通行管制，跟随标识分流入岛 / 出岛。
+      </div>
+      <div class="alert a-gold"><span class="hd">台风季尾巴</span>
+        10 月仍是台风季末尾。<b>9 级风禁大巴上桥，10 级及以上封桥</b>，小车也会限速。
+        出发前三天看天气，遇封桥就整段取消，改汕头 + 潮州。
+      </div>
+      <div class="alert a-sea"><span class="hd">电车注意</span>
+        南澳山路、环山坡道多，<b>耗电会比平地翻倍</b>。上岛前在汕头把电补满（建议 90% 以上），
+        岛内就不用操心。岛内充电桩密度不如市区。
+      </div>
+      <div class="alert a-violet"><span class="hd">人多的地方</span>
+        国庆人流集中在<b>青澳湾沙滩和后宅镇</b>，其余路段体感还行。
+        青澳湾停车位极紧张，高峰时兜圈找位半小时是常态 —— 宁可停远一点走几步。
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <h4>潮汕国庆自驾 · 南澳岛一日环岛</h4>
+      <p>站点、票价与通行规则基于公开信息整理，核实于 2026-09-28。南澳预约规则由汕头市南澳大桥建设管理中心发布，出行前请以「南澳畅行」小程序公告为准。</p>
+    </div>
+    <div class="nx">
+      <a href="index.html">&rarr; 返回总览</a>
+      <a href="itinerary.html">&rarr; 每日行程</a>
+      <a href="food.html">&rarr; 美食图谱</a>
+      <a href="prep.html">&rarr; 行前准备</a>
+      <a href="budget.html">&rarr; 预算计算</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

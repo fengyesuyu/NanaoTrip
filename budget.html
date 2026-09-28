@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>预算计算 | 潮汕国庆自驾 · 5 天 4 晚</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html">
+      <span class="mk">潮</span>
+      <span>潮汕国庆自驾<small>汕头 · 南澳岛</small></span>
+    </a>
+    <button class="burger" aria-label="菜单">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">总览</a>
+      <a href="itinerary.html">行程</a>
+      <a href="food.html">美食</a>
+      <a href="nanao.html">南澳岛</a>
+      <a href="prep.html">行前</a>
+      <a href="budget.html" class="act">预算</a>
+    </nav>
+    <div class="prog"></div>
+  </div>
+</header>
+
+<section class="section tight" style="padding-top:44px">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:26px">
+      <div class="kicker">Budget</div>
+      <h2>算一下这趟要花多少</h2>
+      <p>下面是可调的。改档次、改人数、开关项目，右边总额实时跟着变。默认按 <strong>3 人 · 5 天 · 舒适档 · 4 晚连住汕头东海岸海景房</strong> 估。</p>
+    </div>
+
+    <div class="calc" data-calc>
+      <!-- 控制区 -->
+      <div class="ctl rv">
+        <div class="grp">
+          <div class="lb">住宿档次</div>
+          <div class="seg">
+            <button data-tier="eco">经济</button>
+            <button class="act" data-tier="comfort">舒适</button>
+            <button data-tier="lux">品质</button>
+          </div>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:12.5px;line-height:1.7">
+            经济 ≈ 300 元/间/晚（公寓式 / 民宿）｜舒适 ≈ 480｜品质 ≈ 750（一线海景高楼层）
+          </p>
+        </div>
+
+        <div class="grp">
+          <div class="lb">同行人数</div>
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div class="num">
+              <button data-step="people-">&minus;</button>
+              <span class="v" data-people>3</span>
+              <button data-step="people+">+</button>
+            </div>
+            <span style="color:var(--muted);font-size:13px">住宿按 <b style="color:var(--text-2)">2 人 1 间</b> 折算间数</span>
+          </div>
+        </div>
+
+        <div class="grp">
+          <div class="lb">行程天数</div>
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div class="num">
+              <button data-step="days-">&minus;</button>
+              <span class="v" data-days>5</span>
+              <button data-step="days+">+</button>
+            </div>
+            <span style="color:var(--muted);font-size:13px">住宿按 <b style="color:var(--text-2)">天数 &minus; 1</b> 晚计算</span>
+          </div>
+        </div>
+
+        <div class="grp">
+          <div class="lb">可选项目</div>
+          <div class="toggles">
+            <div class="tg" data-key="sea"><span class="sw"></span><span>南澳海上项目</span><span class="pr">+160 / 人</span></div>
+            <div class="tg" data-key="charge"><span class="sw"></span><span>自费快充（不蹭免费闪充）</span><span class="pr">+260</span></div>
+            <div class="tg" data-key="gift"><span class="sw"></span><span>手信与备用金</span><span class="pr">800 / 600</span></div>
+          </div>
+        </div>
+
+        <div class="alert a-sea" style="margin-top:20px;font-size:13px">
+          <b>两项固定为 0</b>：国庆高速免费（10/1–10/7，7 座及以下），深汕高速往返不花钱；
+          首年比亚迪闪充站免费，电费可以压到接近 0。
+        </div>
+      </div>
+
+      <!-- 汇总区 -->
+      <div class="sum rv" data-d="1">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:8px">3 人总预算</div>
+        <div class="big" data-sum-total>&#165;0</div>
+        <div class="per" data-sum-per>—</div>
+        <hr>
+        <div data-sum-lines></div>
+        <div class="note">
+          价格为区间估算，仅供规划参考。国庆期间住宿与餐饮溢价明显，实际可能上下浮动 20% 左右。<br>
+          南澳大桥 9 座及以下 96 元（入岛一次性收双程），<b>法定节假日小车可能免收</b>，以现场执行为准。
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:40px 0">
+
+    <!-- 参考档位 -->
+    <div class="sec-head rv">
+      <div class="kicker">Reference</div>
+      <h2>两档参考值</h2>
+      <p>不想逐项调的话，直接看这两个数。</p>
+    </div>
+
+    <div class="grid g2 rv" style="gap:16px">
+      <div class="card" style="padding:24px">
+        <div style="font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--sea);text-transform:uppercase;margin-bottom:8px">经济档</div>
+        <div style="font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--sea)">&#165;5,500</div>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:14px">3 人合计 · 人均约 1,830 元</div>
+        <p style="margin:0;color:var(--muted);font-size:13.5px;line-height:1.8">
+          住东海岸公寓式海景房（侧海景 / 中低楼层）· 吃本地小馆和夜宵为主 ·
+          只玩免费景点 · 不参加海上项目。
+        </p>
+      </div>
+
+      <div class="card" style="padding:24px">
+        <div style="font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--coral);text-transform:uppercase;margin-bottom:8px">舒适档</div>
+        <div style="font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--coral)">&#165;9,500</div>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:14px">3 人合计 · 人均约 3,170 元</div>
+        <p style="margin:0;color:var(--muted);font-size:13.5px;line-height:1.8">
+          住高楼层一线海景房 · 牛肉火锅、生腌、海鲜大排档都安排上 ·
+          南澳玩一次海上项目 · 留足手信与备用金。
+        </p>
+      </div>
+    </div>
+
+    <div class="grid g2 rv" data-d="1" style="gap:14px;margin-top:16px">
+      <div class="alert a-sea">
+        <span class="hd">省钱空间最大的三项</span>
+        <b>① 电费</b>：首年比亚迪闪充站免费，去程回程都走闪充站，实际电费可能就是个位数。<br>
+        <b>② 住宿</b>：这是绝对大头。东海岸公寓式海景房比同片区酒店海景房便宜 30% 左右。<br>
+        <b>③ 餐饮</b>：早餐和夜宵走本地小馆，人均能从 250 压到 120 左右，体验几乎不降。
+      </div>
+      <div class="alert a-gold">
+        <span class="hd">想升级就升这三处</span>
+        <b>① 海景房楼层与朝向</b>：高楼层一线正海景，差价通常在 200–300 元 / 晚。<br>
+        <b>② 南澳出海</b>：青澳湾快艇海钓拼船约 168–188 元 / 人，包船约 480 元 / 12 人内。<br>
+        <b>③ 一顿高端潮菜</b>：汕头老市区的高端潮菜馆，人均可到 300+，体验和老字号完全不同。
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <h4>潮汕国庆自驾 · 预算估算</h4>
+      <p>价格为公开信息整理的区间估算，核实于 2026-09-28。国庆溢价明显，实际支出可能上下浮动。高速免费政策依据《重大节假日免收小型客车通行费实施方案》。</p>
+    </div>
+    <div class="nx">
+      <a href="index.html">&rarr; 返回总览</a>
+      <a href="itinerary.html">&rarr; 每日行程</a>
+      <a href="food.html">&rarr; 美食图谱</a>
+      <a href="nanao.html">&rarr; 南澳岛</a>
+      <a href="prep.html">&rarr; 行前准备</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

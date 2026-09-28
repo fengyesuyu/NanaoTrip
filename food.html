@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>美食图谱 | 潮汕国庆自驾 · 汕头 + 南澳岛</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html">
+      <span class="mk">潮</span>
+      <span>潮汕国庆自驾<small>汕头 · 南澳岛</small></span>
+    </a>
+    <button class="burger" aria-label="菜单">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">总览</a>
+      <a href="itinerary.html">行程</a>
+      <a href="food.html" class="act">美食</a>
+      <a href="nanao.html">南澳岛</a>
+      <a href="prep.html">行前</a>
+      <a href="budget.html">预算</a>
+    </nav>
+    <div class="prog"></div>
+  </div>
+</header>
+
+<section class="section tight" style="padding-top:44px">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:22px">
+      <div class="kicker">Where to eat</div>
+      <h2>美食图谱</h2>
+      <p>你点名的五家已经全部排进行程动线。点任意一张卡片看详细信息和地址，用下面的按钮按片区或品类筛选。</p>
+    </div>
+
+    <div class="filters rv">
+      <button class="chip act" data-f="all">全部</button>
+      <button class="chip" data-f="you">你点名的</button>
+      <button class="chip" data-f="laocheng">老城片区</button>
+      <button class="chip" data-f="longyan">龙眼南路</button>
+      <button class="chip" data-f="nanao">南澳岛</button>
+      <button class="chip" data-f="main">正餐</button>
+      <button class="chip" data-f="snack">小吃甜品</button>
+      <button class="chip" data-f="drink">饮品</button>
+      <input class="search" type="search" placeholder="搜店名 / 招牌菜…" data-food-search>
+    </div>
+
+    <div class="food-grid" data-food-grid>
+
+      <!-- 1 -->
+      <article class="fcard rv" data-tags="you longyan nanao main"
+        data-txt="瑞娇嫲嫲 潮汕生腌 生腌膏蟹 皮皮虾 血蛤 生蚝 白粥 非遗 龙眼南路 南澳后宅"
+        data-lb data-name="瑞娇嫲嫲 · 潮汕生腌"
+        data-pills="你点名的|Day 2 岛上晚餐|人均 60–100|Day 4 市区可补"
+        data-d1="龙眼南路总店：金平区龙眼园北区 8 栋 104 号｜11:00–02:00。南澳后宅店：南澳县后宅镇海滨路 100 号首层｜10:00–01:00。"
+        data-d2="招牌：生腌膏蟹、生腌皮皮虾、血蛤、生蚝。潮汕非遗生腌技艺品牌，央视《寻味潮汕》报道过。吃生腌三条铁律：先喝一碗白粥打底、不配酒、不贪多。晚上去部分海鲜可能售罄，想吃全建议早点到。">
+        <div class="ph"><span class="badge you">你点名的</span><img src="assets/img/shengyan.jpg" alt="潮汕生腌"></div>
+        <div class="in">
+          <h3>瑞娇嫲嫲 · 潮汕生腌</h3>
+          <div class="tags"><span>龙眼南路</span><span>南澳也有</span><span>生腌</span></div>
+          <div class="meta"><b>招牌</b> 生腌膏蟹 · 皮皮虾 · 血蛤<br><b>人均</b> 60–100 元 · 营业至 02:00</div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="fcard rv" data-d="1" data-tags="you longyan snack"
+        data-txt="楼下鸡翅 龙眼店 腐乳鸡翅 雪花鸡翅 反沙蛋黄 炸虾枣 外带"
+        data-lb data-name="楼下鸡翅（龙眼店）"
+        data-pills="你点名的|Day 1 夜宵|人均约 14 元|基本外带"
+        data-d1="金平区龙眼西七巷 6 号（龙眼园南区）｜约 14:00–24:00，另一说 11:00–01:00。"
+        data-d2="招牌：腐乳鸡翅、雪花鸡翅、反沙咸蛋黄、炸虾枣。现点现炸，油很干净，本地人日常也在排。店面小、基本只能外带，人多时会有点挤，不适合久坐。">
+        <div class="ph"><span class="badge you">你点名的</span><img src="assets/img/chicken-wings.jpg" alt="炸鸡翅"></div>
+        <div class="in">
+          <h3>楼下鸡翅（龙眼店）</h3>
+          <div class="tags"><span>龙眼南路</span><span>炸物</span><span>夜宵</span></div>
+          <div class="meta"><b>招牌</b> 腐乳鸡翅 · 雪花鸡翅 · 炸虾枣<br><b>人均</b> 约 14 元 · 基本外带</div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="fcard rv" data-d="2" data-tags="you laocheng snack"
+        data-txt="邻家果园 梅汁水果 甘草水果 20元 一大盒 鲜榨果汁 水果酸奶 金新路"
+        data-lb data-name="邻家果园梅汁水果"
+        data-pills="你点名的|Day 3 下午|20 元一大盒|解腻神器"
+        data-d1="金平区金新路 118 号 1 座｜10:30–22:30，另一说 12:00–21:30。"
+        data-d2="20 元一大盒梅汁 / 甘草水果，现切现拌，甘草汁可以按自己喜好加。另外还有鲜榨果汁、水果冰、水果鲜牛乳、水果酸奶。逛吃老市区时拎一盒，清爽解腻，本地人回头率很高的一家。">
+        <div class="ph"><span class="badge you">你点名的</span><img src="assets/img/fruit-box.jpg" alt="梅汁甘草水果"></div>
+        <div class="in">
+          <h3>邻家果园梅汁水果</h3>
+          <div class="tags"><span>老城片区</span><span>水果</span><span>解腻</span></div>
+          <div class="meta"><b>招牌</b> 梅汁 / 甘草水果<br><b>人均</b> 20 元 · 现切现拌</div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="fcard rv" data-d="3" data-tags="you laocheng drink"
+        data-txt="鮀茶堂 汕头本土茶饮 芝芝潮汕青芒 鸭屎香奶茶 竹筒茶 单丛 商平路 汕头旅社"
+        data-lb data-name="鮀茶堂 · 汕头本土茶饮"
+        data-pills="你点名的|Day 3 上午|人均 12–18 元|汕头旅社旁"
+        data-d1="商平路店：金平区商平路 37 号，汕头旅社旁｜10:00–22:00。另有龙眼南路 84 号、升平路 8 号门店。"
+        data-d2="你爱的「芝芝潮汕青芒」这里就有。另外招牌是鸭屎香奶茶与竹筒茶（竹筒可以带走当纪念）。茶底用凤凰单丛，茶汤占比高，没有工业奶精的甜腻感。旺季要排队，建议刚开门就去。">
+        <div class="ph"><span class="badge you">你点名的</span><img src="assets/img/tea-drink.jpg" alt="潮汕茶饮"></div>
+        <div class="in">
+          <h3>鮀茶堂 · 汕头本土茶饮</h3>
+          <div class="tags"><span>老城片区</span><span>茶饮</span><span>汕头旅社旁</span></div>
+          <div class="meta"><b>招牌</b> 芝芝潮汕青芒 · 鸭屎香奶茶<br><b>人均</b> 12–18 元 · 竹筒茶可带走</div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="fcard rv" data-d="4" data-tags="you snack"
+        data-txt="霸道福 潮汕製冰店 炒酸奶 纯水果软冰淇淋 豆腐雪糕 金砂东路"
+        data-lb data-name="霸道福 · 潮汕製冰店"
+        data-pills="你点名的|Day 3 下午|人均约 30 元|需确认门店"
+        data-d1="金砂总店：金平区金砂东路 108 号（金讯大厦楼下）｜10:00–23:00。"
+        data-d2="汕头高端炒酸奶的开创品牌，主打不加牛奶奶油、低糖低热量的纯水果软冰淇淋，另有炒酸奶和很有话题度的豆腐雪糕。品牌另有多家门店（含中山中路一带），出发前用地图确认当天营业门店。">
+        <div class="ph"><span class="badge you">你点名的</span><img src="assets/img/dessert.jpg" alt="炒酸奶与水果冰淇淋"></div>
+        <div class="in">
+          <h3>霸道福 · 潮汕製冰店</h3>
+          <div class="tags"><span>金砂东路</span><span>冰品</span><span>甜品</span></div>
+          <div class="meta"><b>招牌</b> 纯水果软冰淇淋 · 炒酸奶<br><b>人均</b> 约 30 元 · 多门店需确认</div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="fcard rv" data-d="5" data-tags="main"
+        data-txt="杏花吴记 牛肉火锅 吊龙 五花趾 匙柄 胸口油 手打牛丸 沙茶酱 必吃榜 排队"
+        data-lb data-name="杏花吴记牛肉火锅"
+        data-pills="Day 3 晚餐|人均 80–100|务必提前取号"
+        data-d1="金平区杏花西路 16 号｜09:30–21:30。"
+        data-d2="必吃榜常客，饭点排队可能到 4 小时，务必在微信公众号或美团提前线上取号，快到号再过去。涮肉口诀：匙柄 / 吊龙 / 雪花肉 8 秒，三花趾 / 五花趾 15 秒，胸口油 3–5 分钟。蘸料是沙茶酱加普宁豆酱加芹菜珠。锅底只认牛骨清汤。不想排队可换八合里海记牛肉火锅（汕头总店）。">
+        <div class="ph"><span class="badge">正餐</span><img src="assets/img/beef-hotpot.jpg" alt="潮汕牛肉火锅"></div>
+        <div class="in">
+          <h3>杏花吴记牛肉火锅</h3>
+          <div class="tags"><span>金平区</span><span>火锅</span><span>必吃榜</span></div>
+          <div class="meta"><b>招牌</b> 吊龙 · 五花趾 · 手打牛丸<br><b>人均</b> 80–100 元 · 提前取号</div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="fcard rv" data-tags="nanao main"
+        data-txt="南澳 蚝烙 紫菜炒饭 马鲛鱼丸 海鲜粥 清蒸小管 后宅市场 大排档 云澳渔港 鱼饭"
+        data-lb data-name="南澳蚝烙 · 后宅市场大排档"
+        data-pills="Day 2 午餐|岛上本地价|记得先问价"
+        data-d1="南澳县后宅镇市场一带，云澳渔港也可就近加工。"
+        data-d2="南澳必吃：南澳蚝烙、紫菜炒饭、马鲛鱼丸、海鲜粥、清蒸小管、鱼饭。最省钱的吃法是后宅市场自己买海鲜（花蟹约 25 元 / 斤、皮皮虾约 30 元 / 斤），找档口加工，加工费 10–20 元。避坑：景区大排档点餐前先问清单价，市场买海鲜注意看称。">
+        <div class="ph"><span class="badge">南澳岛</span><img src="assets/img/oyster-omelette.jpg" alt="蚝烙"></div>
+        <div class="in">
+          <h3>南澳蚝烙 · 后宅市场大排档</h3>
+          <div class="tags"><span>南澳后宅</span><span>海鲜</span><span>大排档</span></div>
+          <div class="meta"><b>招牌</b> 蚝烙 · 紫菜炒饭 · 海鲜粥<br><b>人均</b> 60–120 元 · 可市场代加工</div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="fcard rv" data-d="1" data-tags="laocheng snack longyan"
+        data-txt="小吴肠粉 老妈宫粽球 伟顺反沙屋 反沙番薯 芋头 咸蛋黄 老城小吃 扫街 龙眼南路"
+        data-lb data-name="老城小吃扫街"
+        data-pills="Day 3–4 白天|人均 15–25|适合边走边吃"
+        data-d1="小吴肠粉：龙眼南路老店。老妈宫粽球：金平区升平路老妈宫戏台旁。伟顺反沙屋：龙眼南路椰园 4 栋 103 号。"
+        data-d2="三家里挑着吃：小吴肠粉是二十多年老店，米浆现磨现蒸，皮薄馅足裹鸡蛋、肉、蚝仔、鲜虾；老妈宫粽球是百年老字号，潮汕粽里的「爱马仕」，吃一次就懂老汕头的仪式感；伟顺反沙屋卖现点现做的反沙小吃，反沙芋、反沙番薯、反沙咸蛋黄，还有回甘的反沙油柑。">
+        <div class="ph"><span class="badge">小吃</span><img src="assets/img/old-street.jpg" alt="汕头老城街景"></div>
+        <div class="in">
+          <h3>老城小吃扫街</h3>
+          <div class="tags"><span>老城片区</span><span>肠粉</span><span>反沙</span><span>粽球</span></div>
+          <div class="meta"><b>招牌</b> 小吴肠粉 · 老妈宫粽球 · 伟顺反沙屋<br><b>人均</b> 15–25 元 / 家</div>
+        </div>
+      </article>
+
+    </div>
+    <div class="empty" data-food-empty>没有匹配的店，换个关键词试试。</div>
+
+    <hr class="rule" style="margin:38px 0">
+
+    <div class="grid g2" style="gap:14px">
+      <div class="alert a-sea rv">
+        <span class="hd">吃生腌的正确姿势</span>
+        潮汕生腌被叫作「潮汕毒药」，鲜是真的鲜，肠胃也是真的挑人。
+        <b>先喝一碗白粥打底，不配酒，不贪多。</b>有基础病或肠胃敏感的话，这道直接跳过，别硬撑。
+      </div>
+      <div class="alert a-gold rv" data-d="1">
+        <span class="hd">点餐前先问价</span>
+        海鲜类大排档尤其要注意。景区店先问清单价再点，市场买海鲜注意看称。
+        <b>楼上鸡翅这类小店基本只能外带</b>，别指望坐下慢慢吃。
+      </div>
+      <div class="alert a-coral rv" data-d="2">
+        <span class="hd">错峰是效率最高的攻略</span>
+        龙眼南路、小公园、青澳湾国庆人极多。<b>上午 10 点前、下午 4 点后</b>是最舒服的时段。
+        鮀茶堂和杏花吴记这两家，一个刚开门去、一个提前线上取号，基本能省掉大半排队时间。
+      </div>
+      <div class="alert a-violet rv" data-d="3">
+        <span class="hd">手信别在景区买</span>
+        老香黄、腐乳饼、束砂、凤凰单丛茶、达濠鱼丸 —— 去小公园老市区一带的老字号门店买，
+        比景区门口便宜而且更正宗。
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <h4>潮汕国庆自驾 · 汕头 + 南澳岛 · 6 天 5 晚</h4>
+      <p>店址与营业时间核实于 2026-09-28，节假日期间营业时间可能调整，出发前建议再确认一次。图片为 AI 生成示意图。价格仅供参考。</p>
+    </div>
+    <div class="nx">
+      <a href="index.html">&rarr; 返回总览</a>
+      <a href="itinerary.html">&rarr; 每日行程</a>
+      <a href="nanao.html">&rarr; 南澳岛</a>
+      <a href="prep.html">&rarr; 行前准备</a>
+      <a href="budget.html">&rarr; 预算计算</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
